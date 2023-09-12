@@ -4,17 +4,18 @@
 ////echo date("H:m:s:a");
 //print_r(getdate());
 
-@$str =$_POST["valider"];
-@$valider =$_POST["valider"];
- $message = "";
-if(isset($valider)){
-  $tab = explode("/",$str);
-    if(checkdate( $tab[0],$tab[1],$tab[2]))
-        $message ="Date valide";
-        else
-            $message ="Date invalider";
+            @$str =$_POST["str"];
+            @$valider =$_POST["valider"];
+             $message = "";
 
-}
+            if(isset($valider)){
+              @$tab = explode("/",$str);
+                if(checkdate( $tab[1],$tab[0],$tab[2]))
+                    $message ="Date valide";
+                    else
+                        $message ="Date invalider";
+
+            }
 
  ?>
  <!DOCTYPE html>

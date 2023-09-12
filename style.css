@@ -28,6 +28,9 @@ input[type="submit"]{
   border-radius: 6px;
   background-color: #4BC;
 }
+.label{
+  margin: 4px;
+}
 #erreur{
   background-color: #C00;
   color: white;
